@@ -8,7 +8,7 @@ function connectToDb(){
     }).catch(err=> console.log(err));
     }
     // what we have done here is to create a function that connects to the database using the mongoose.connect() method.
-    // what is useNewUrlParser and useUnifiedTopology in the connect method? it is a way to avoid deprecation warnings in the console and to ensure that the connection to the database is successful.
+    // why we are using newUrlParser and useUnifiedTopology is because they are required to avoid deprecation warnings. Deprecation warnings are warnings that are given by the mongoose package to inform you that a particular feature you are using is no longer supported and will be removed in future versions of the package.
     // we have also used the .then() and .catch() methods to handle the promise returned by the mongoose.connect() method.
     
 
