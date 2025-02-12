@@ -1,0 +1,1 @@
+const usreModel = require('../models/user.model');
