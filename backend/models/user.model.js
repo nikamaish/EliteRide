@@ -57,6 +57,7 @@ userSchema.methods.generateAuthToken = function(){
 
 
 const userModel  = mongoose.model('User', userSchema);
+module.exports = userModel;
 // We create the User model using mongoose.model('User', userSchema), which allows us to interact with the database.
 
 // Controllers handle HTTP requests and use these model methods instead of implementing the logic themselves.
